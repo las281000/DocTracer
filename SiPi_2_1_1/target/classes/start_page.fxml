@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane
+        alignment="CENTER"
+        xmlns="http://javafx.com/javafx/10.0.2-internal"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="Controller"
+        vgap="30"
+        styleClass="pane">
+
+    <TextField
+            prefHeight="40"
+            prefWidth="300"
+            promptText="Логин"
+            fx:id="login"
+            GridPane.rowIndex="0">
+    </TextField>
+
+    <PasswordField
+            prefHeight="40"
+            prefWidth="300"
+            promptText="Пароль"
+            fx:id="password"
+            GridPane.rowIndex="1">
+    </PasswordField>
+
+    <Button
+            prefHeight="40"
+            prefWidth="300"
+            text="Войти"
+            onAction="#clickInput"
+            fx:id="vxod"
+            GridPane.rowIndex="2" >
+    </Button>
+
+    <Button
+            prefHeight="40"
+            prefWidth="300"
+            text="Регистрация"
+            fx:id="regist"
+            onAction="#clickReg"
+            GridPane.rowIndex="6">
+    </Button>
+
+
+</GridPane>

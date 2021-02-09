@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WorkPageController">
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+
+            <VBox alignment="CENTER" >
+               <children>
+
+                  <Button fx:id="lks" styleClass="bar" mnemonicParsing="false" onAction="#clickButton" prefHeight="75.0" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button fx:id="send" styleClass="bar" mnemonicParsing="false" onAction="#clickButton" prefHeight="75.0" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button fx:id="sent" styleClass="bar" mnemonicParsing="false" onAction="#clickButton" prefHeight="75.0" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button fx:id="get" styleClass="bar" mnemonicParsing="false" onAction="#clickButton" prefHeight="75.0" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button fx:id="notifi" styleClass="bar" minHeight="75.0" mnemonicParsing="false" onAction="#clickButton" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button fx:id="exit" styleClass="bar" minHeight="75.0" mnemonicParsing="false" onAction="#clickButton" prefWidth="75.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+
+         </children>
+      </HBox>
+   </left>
+   <center>
+
+      <BorderPane fx:id="workZone" prefHeight="426.0" prefWidth="739.0" BorderPane.alignment="CENTER">
+         <center>
+
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,47 @@
+.root{
+    -fx-font-size: 16px;
+    -fx-background-image: url("/images/background2.jpg");
+    -fx-background-repeat: repeat;
+}
+
+.button:hover{
+    -fx-background-color: "828282";
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-faint-focus-color: "828282";
+    -fx-font-size: 16px;
+}
+
+.combo-box{
+    -fx-faint-focus-color: "828282";
+    -fx-font-size: 16px;
+}
+
+.table-view{
+    -fx-faint-focus-color: "828282";
+    -fx-font-size: 16px;
+}
+
+.button{
+       -fx-text-fill: black;
+       -fx-background-color: white;
+}
+
+.bar{
+    -fx-background-color: white;
+}
+
+.lks{
+    -fx-background-color: "c2c2c2";
+}
+
+.bar:hover{
+    -fx-background-color: "c2c2c2";
+}
+
+date-picker{
+    -fx-faint-focus-color: "828282";
+    -fx-font-size: 16px;
+}

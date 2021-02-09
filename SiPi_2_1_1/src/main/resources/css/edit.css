@@ -1,0 +1,20 @@
+.root{
+    -fx-font-size: 16px;
+    -fx-background-image: url("/images/background.jpg");
+    -fx-background-repeat: repeat;
+}
+
+.button{
+       -fx-text-fill: black;
+       -fx-background-color: white;
+}
+
+.button:hover{
+    -fx-background-color: "828282";
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-faint-focus-color: "828282";
+    -fx-font-size: 16px;
+}

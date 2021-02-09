@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="true" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LksController">
+   <padding>
+      <Insets bottom="10" top="10" />
+   </padding>
+
+   <children>
+
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Мои данные" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15" />
+         </VBox.margin>
+      </Label>
+
+      <Label fx:id="second_name" text="Фамилия" prefWidth="300">
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </Label>
+
+      <Label fx:id="first_name" text="Имя" prefWidth="300">
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </Label>
+
+      <Label fx:id="middle_name" text="Отчество" prefWidth="300">
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </Label>
+
+      <Label fx:id="position" text="Должность" prefWidth="300" wrapText="true" >
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </Label>
+
+      <Button fx:id="edit" styleClass="lks" maxHeight="40" maxWidth="200" minHeight="40" minWidth="200" mnemonicParsing="false" onAction="#clickEdit" prefHeight="40" text="Изменить">
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </Button>
+
+
+
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Мои сотрудники" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15" top="30" />
+         </VBox.margin>
+      </Label>
+
+      <ComboBox fx:id="people" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40">
+         <VBox.margin>
+            <Insets bottom="10" />
+         </VBox.margin>
+      </ComboBox>
+
+      <Button fx:id="del" styleClass="lks" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" mnemonicParsing="false" onAction="#clickDel" prefHeight="40" text="Удалить сотрудника и его подчиненных" />
+
+   </children>
+</VBox>

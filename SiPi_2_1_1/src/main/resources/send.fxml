@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SendController">
+
+   <children>
+      <ComboBox fx:id="addressees" maxHeight="40" maxWidth="500" minHeight="40.0" minWidth="500.0" prefHeight="40" prefWidth="500.0" promptText="Адресат">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </ComboBox>
+
+      <HBox alignment="CENTER">
+         <children>
+            <Label fx:id="fileName" maxHeight="40" maxWidth="350" minHeight="40.0" minWidth="390" prefHeight="40" prefWidth="390" text="Название файла">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="load" styleClass="lks" maxHeight="40" maxWidth="100" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#ckickLoad" prefHeight="40" prefWidth="100.0" text="Выбрать" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="40" />
+         </VBox.margin>
+      </HBox>
+
+      <HBox alignment="CENTER">
+         <children>
+            <DatePicker fx:id="date_pick" maxHeight="40" maxWidth="390" minHeight="40.0" minWidth="390" prefHeight="40" prefWidth="390" promptText="Рассматривается до">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Button fx:id="send" styleClass="lks" maxHeight="40" maxWidth="100" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#clickSend" prefHeight="40" prefWidth="100.0" text="Отправить" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

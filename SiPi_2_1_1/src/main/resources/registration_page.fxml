@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistrationPageController">
+    <bottom>
+        <HBox prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#clickBack" prefHeight="20.0" prefWidth="30.0" text="←" />
+            </children>
+        </HBox>
+    </bottom>
+
+    <center>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+
+                <Label alignment="CENTER" contentDisplay="CENTER" text="Регистрация" textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="30" />
+                    </VBox.margin>
+                </Label>
+
+                <TextField fx:id="first_name" maxHeight="40" maxWidth="400" minHeight="40.0" minWidth="400.0" prefHeight="40" prefWidth="400.0" promptText="Имя">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+
+                <TextField fx:id="second_name" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Фамилия">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+
+                <TextField fx:id="middle_name" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Отчество">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+
+                <TextField fx:id="position" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Должность">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+
+
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="400.0">
+                    <children>
+                        <Label  alignment="CENTER_LEFT" maxHeight="40" maxWidth="80" minHeight="40" minWidth="80" prefHeight="40" prefWidth="80" text="Начальство">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Label>
+
+                        <ComboBox fx:id="boss" maxHeight="40" maxWidth="310" minHeight="40" minWidth="310" prefHeight="40" prefWidth="310" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </HBox>
+
+                <TextField fx:id="login" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Логин">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </TextField>
+
+                <PasswordField fx:id="password1" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Пароль">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </PasswordField>
+
+                <PasswordField fx:id="password2" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" prefWidth="400" promptText="Повторите пароль">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </PasswordField>
+                
+                <Button mnemonicParsing="false" onAction="#clickReg" maxHeight="40" maxWidth="400" minHeight="40" minWidth="400" prefHeight="40" text="Зарегистрироваться">
+                    <VBox.margin>
+                        <Insets top="20.0" bottom="30"/>
+                    </VBox.margin>
+                </Button>
+
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
